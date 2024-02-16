@@ -87,6 +87,15 @@ namespace godrok_home
                     terf_sum += godrok_list[i];
                 }
                 Console.WriteLine($"d)\nA térfogata: {terf_sum * 10} m^3.");
+                int viz_terf = 0;
+                for (int i = e; i < v; i++)
+                {
+                    if (godrok_list[i]>2)
+                    { 
+                        viz_terf += godrok_list[i];
+                    }
+                }
+                Console.WriteLine($"e)\nA vízmennyiség {viz_terf*10} m ^3.");
             }
         }
     }
